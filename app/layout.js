@@ -1,5 +1,7 @@
 import localFont from "next/font/local";
 import "./globals.css";
+import { Footer } from "@/components/AppFooter";
+import { Navbar } from "@/components/Navbar";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -14,7 +16,7 @@ const geistMono = localFont({
 
 export const metadata = {
   title: "Wholesalers NG | Cluster of wholesalers",
-  description: "Find a wide range",
+  description: "Find a wide range of wholesalers, all in one place",
 };
 
 export default function RootLayout({ children }) {
@@ -23,7 +25,9 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <Navbar/>
         {children}
+        <Footer/>
       </body>
     </html>
   );

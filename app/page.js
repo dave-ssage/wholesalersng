@@ -13,7 +13,7 @@ export default function Home() {
                 <p className="border border-orange-500 p-3 rounded-lg text-center text-lg lg:text-2xl text-orange-900 mb-5">Hot Categories</p>
                 <div className="grid grid-cols-2 gap-3">
                     <blockquote className="h-28 flex flex-col justify-center items-center gap-3 bg-white p-3 rounded-lg">
-                        <IoShirtSharp/>
+                        <IoShirtSharp className="text-4xl"/>
                         <Link href="#">Cloths</Link>
                     </blockquote>
                     <blockquote className="h-28 flex flex-col justify-center items-center gap-3 bg-white p-3 rounded-lg">
